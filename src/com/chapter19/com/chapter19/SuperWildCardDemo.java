@@ -1,11 +1,12 @@
+package com.chapter19;
 
 public class SuperWildCardDemo {
   public static void main(String[] args) {
     GenericStack<String> stack1 = new GenericStack<>();
     GenericStack<Object> stack2 = new GenericStack<>();
-    stack2.push(""Java"");
+    stack2.push("Java");
     stack2.push(2);
-    stack1.push(""Sun"");
+    stack1.push("Sun");
     add(stack1, stack2);
     AnyWildCardDemo.print(stack2);
   }

@@ -1,3 +1,4 @@
+package com.chapter19;
 
 public class WildCardNeedDemo {
   public static void main(String[] args ) {
@@ -6,7 +7,7 @@ public class WildCardNeedDemo {
     intStack.push(2);
     intStack.push(-2);
 
-    System.out.print(""The max number is "" + max(intStack)); // Error: 
+    System.out.print("The max number is " + max(intStack)); // Error: 
   }
 
   /** Find the maximum in a stack of numbers */

@@ -1,3 +1,4 @@
+package com.chapter19;
 
 public class RationalMatrix extends GenericMatrix<Rational> {
   @Override /** Add two rational numbers */

@@ -1,3 +1,4 @@
+package com.chapter19;
 
 public class TestRationalMatrix {
   public static void main(String[] args) {
@@ -13,11 +14,11 @@ public class TestRationalMatrix {
     // Create an instance of RationalMatrix
     RationalMatrix rationalMatrix = new RationalMatrix();
 
-    System.out.println(""\nm1 + m2 is "");
+    System.out.println("\nm1 + m2 is ");
     GenericMatrix.printResult(
       m1, m2, rationalMatrix.addMatrix(m1, m2), '+');
 
-    System.out.println(""\nm1 * m2 is "");
+    System.out.println("\nm1 * m2 is ");
     GenericMatrix.printResult(
       m1, m2, rationalMatrix.multiplyMatrix(m1, m2), '*');
   }

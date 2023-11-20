@@ -1,3 +1,4 @@
+package com.chapter19;
 
 public abstract class GenericMatrix<E extends Number> {
   /** Abstract method for adding two elements of the matrices */
@@ -15,7 +16,7 @@ public abstract class GenericMatrix<E extends Number> {
     if ((matrix1.length != matrix2.length) ||
         (matrix1[0].length != matrix2[0].length)) {
       throw new RuntimeException(
-        ""The matrices do not have the same size"");
+        "The matrices do not have the same size");
     }
 
     E[][] result =
@@ -35,7 +36,7 @@ public abstract class GenericMatrix<E extends Number> {
     // Check bounds
     if (matrix1[0].length != matrix2.length) {
       throw new RuntimeException(
-        ""The matrices do not have compatible size"");
+        "The matrices do not have compatible size");
     }
 
     // Create result matrix
@@ -62,23 +63,23 @@ public abstract class GenericMatrix<E extends Number> {
       Number[][] m1, Number[][] m2, Number[][] m3, char op) {
     for (int i = 0; i < m1.length; i++) {
       for (int j = 0; j < m1[0].length; j++)
-        System.out.print("" "" + m1[i][j]);
+        System.out.print(" " + m1[i][j]);
 
       if (i == m1.length / 2)
-        System.out.print(""  "" + op + ""  "");
+        System.out.print("  " + op + "  ");
       else
-        System.out.print(""     "");
+        System.out.print("     ");
 
       for (int j = 0; j < m2.length; j++)
-        System.out.print("" "" + m2[i][j]);
+        System.out.print(" " + m2[i][j]);
 
       if (i == m1.length / 2)
-        System.out.print(""  =  "");
+        System.out.print("  =  ");
       else
-        System.out.print(""     "");
+        System.out.print("     ");
 
       for (int j = 0; j < m3.length; j++)
-        System.out.print(m3[i][j] + "" "");
+        System.out.print(m3[i][j] + " ");
 
       System.out.println();
     }

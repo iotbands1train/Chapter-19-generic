@@ -1,3 +1,4 @@
+package com.chapter19;
 
 public class GenericStack<E> {
   private java.util.ArrayList<E> list = new java.util.ArrayList<>();
@@ -26,6 +27,6 @@ public class GenericStack<E> {
   
   @Override
   public String toString() {
-    return ""stack: "" + list.toString();
+    return "stack: " + list.toString();
   }
 }

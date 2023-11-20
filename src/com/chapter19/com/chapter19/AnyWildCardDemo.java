@@ -1,3 +1,4 @@
+package com.chapter19;
 
 public class AnyWildCardDemo {
   public static void main(String[] args) {
@@ -12,7 +13,7 @@ public class AnyWildCardDemo {
   /** Print objects and empties the stack */
   public static void print(GenericStack<?> stack) {
     while (!stack.isEmpty()) {
-      System.out.print(stack.pop() + "" "");
+      System.out.print(stack.pop() + " ");
     }
   }
 }

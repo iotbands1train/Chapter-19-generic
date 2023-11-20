@@ -1,3 +1,4 @@
+package com.chapter19;
 
 public class TestIntegerMatrix {
   public static void main(String[] args) {
@@ -8,11 +9,11 @@ public class TestIntegerMatrix {
     // Create an instance of IntegerMatrix
     IntegerMatrix integerMatrix = new IntegerMatrix();
 
-    System.out.println(""\nm1 + m2 is "");
+    System.out.println("\nm1 + m2 is ");
     GenericMatrix.printResult(
       m1, m2, integerMatrix.addMatrix(m1, m2), '+');
 
-    System.out.println(""\nm1 * m2 is "");
+    System.out.println("\nm1 * m2 is ");
     GenericMatrix.printResult(
       m1, m2, integerMatrix.multiplyMatrix(m1, m2), '*');
   }
